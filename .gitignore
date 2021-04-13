@@ -84,7 +84,8 @@ typings/
 
 # Optional stylelint cache
 .stylelintcache
-
+# macos files
+.DS_store
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
