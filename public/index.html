@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>random thing generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="app.js" defer></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAe8xdUw1UkMwFcJv0Xju86_aXViNANS6Y",
+    authDomain: "first-project-35ee4.firebaseapp.com",
+    projectId: "first-project-35ee4",
+    storageBucket: "first-project-35ee4.appspot.com",
+    messagingSenderId: "645782659987",
+    appId: "1:645782659987:web:9d2bc945bcbe3c8a5dbe66"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+  <H1>Random Thing generator</H1>
+  <section id="whenSignedOut">
+      <button id="signInBtn" class="Btn primary">Sign in with google</button>
+
+  </section>
+  
+  <section id="whenSignedIn" hidden="true">
+      <button id="signOutBtn" class="Btn primary">Sign out</button>
+  </section>
+  <section id="listforthings">
+    <ul id="thingslist">
+
+    </ul>
+    <button id="createThing">Create Random Thing</button>
+  </section>
+</body>
+</html>

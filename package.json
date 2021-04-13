@@ -1,0 +1,14 @@
+{
+  "name": "startnpm",
+  "version": "1.0.0",
+  "description": "just a test",
+  "main": "public/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^9.9.0"
+  }
+}
